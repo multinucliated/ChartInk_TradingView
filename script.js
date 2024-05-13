@@ -1,4 +1,14 @@
+
+
+
+setTimeout(() => {
+
+    
+
+    console.log("Started to rename the link")
 // Get the tbody element where the rows are contained
+
+
 var tbody = document.getElementById("DataTables_Table_0").tBodies[0];
 
 // Loop through each row in the tbody
@@ -24,4 +34,12 @@ for (var i = 0; i < tbody.rows.length; i++) {
     if (chartLink) {
         chartLink.href = `https://www.tradingview.com/chart/?symbol=NSE:${stockSymbol}`;
     }
+
+console.log("Completed")
 }
+
+
+}, 5000);  // 10000 milliseconds = 10 seconds
+
+  
+
